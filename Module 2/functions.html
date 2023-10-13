@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: white;
+        }
+        button{
+            background-color: rgb(68, 180, 180);
+            width: 200px;
+            height: 100px;
+            border: none;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <button>Change Bg</button>
+
+
+    <script>
+        function changeBg(){
+            document.body.style.backgroundColor = "blue";
+        }
+
+        let button = document.querySelector("button")
+        button.addEventListener('click',changeBg)
+    </script>
+</body>
+</html>
